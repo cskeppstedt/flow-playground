@@ -15,4 +15,3 @@ posten.onMessage = (error, message) => {
     console.log('error occurred', error.message);
   }
 }
-
