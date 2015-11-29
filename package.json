@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --watch --colors --config webpack.config.js"
+    "start": "gulp"
   },
   "author": "Christoffer Skeppstedt <chris.skeppstedt@klarna.com> (https://github.com/cskeppstedt/)",
   "license": "ISC",
