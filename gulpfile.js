@@ -18,4 +18,4 @@ gulp.task('typecheck', function() {
     }))
 })
 
-gulp.task('default', ['watch'])
+gulp.task('default', ['typecheck', 'watch'])
