@@ -8,6 +8,10 @@ import MyDep from '../my-dep/index'
 describe('flow-playground', function () {
   const sandbox = sinon.sandbox.create()
 
+  beforeEach(function () {
+    sandbox.stub(MyDep, 'log')
+  })
+
   afterEach(function () {
     sandbox.restore()
   })
@@ -24,11 +28,10 @@ describe('flow-playground', function () {
   })
 
   it ('should notify the logging service', function () {
-    const loggingStub = sandbox.stub(MyDep, 'log')
     const expected = 'FOO'
 
     main('foo')
 
-    sinon.assert.calledWithExactly(loggingStub, expected)
+    sinon.assert.calledWithExactly(MyDep.log, expected)
   })
 })
