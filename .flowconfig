@@ -3,8 +3,10 @@
 .*/node_modules/.*
 
 [include]
-./**/*.js
+./src/*.js
+./my-dep/*.js
 
 [libs]
+interfaces/
 
 [options]

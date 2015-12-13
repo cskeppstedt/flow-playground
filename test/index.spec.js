@@ -1,3 +1,5 @@
+/* @flow */
+
 import { expect } from 'chai'
 import main from '../src/index'
 import sinon from 'sinon'
@@ -22,7 +24,7 @@ describe('flow-playground', function () {
   })
 
   it ('should notify the logging service', function () {
-    const loggingStub = sinon.stub(MyDep, 'log')
+    const loggingStub = sandbox.stub(MyDep, 'log')
     const expected = 'FOO'
 
     main('foo')
