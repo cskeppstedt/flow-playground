@@ -1,10 +1,10 @@
 var gulp = require('gulp')
 var plumber = require('gulp-plumber')
-var react = require('gulp-react')
 var flow = require('gulp-flowtype')
 
 gulp.task('watch', function() {
   gulp.watch('./src/**/*.js', ['typecheck'])
+  gulp.watch('./my-dep/**/*.js', ['typecheck'])
 })
 
 gulp.task('typecheck', function() {
