@@ -1,12 +1,13 @@
 [ignore]
-.*/dist/.*
+.*/build/.*
 .*/node_modules/.*
+.*/lib/flow/.*
 
 [include]
-./src/*.js
-./my-dep/*.js
+./src/
+./test/
 
 [libs]
-interfaces/
+./lib/flow/
 
 [options]

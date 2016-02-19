@@ -1,0 +1,17 @@
+{
+  "extends": "standard",
+  "env": {
+    "browser": false,
+    "mocha": true,
+    "node": true
+  },
+  "parser": "babel-eslint",
+  "plugins": [
+    "flow-vars",
+    "mocha"
+  ],
+  "rules": {
+    "flow-vars/define-flow-type": 1,
+    "flow-vars/use-flow-type": 1
+  }
+}
